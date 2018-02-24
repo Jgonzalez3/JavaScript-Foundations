@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>What time is it?</title>
+</head>
+<body>
+    
+</body>
+<script>;
+    var hour = 8;
+    var minute = 50;
+    var period = "AM"
+    if(period == "AM"){
+        if(hour == 12 && minute == 0){
+            console.log("It's midnight!");
+        }
+        else if(minute == 5){
+            console.log("It's 5 after", hour, "in the morning")
+        }
+        else if(minute > 15 && minute < 30){
+            console.log("It's a quarter after", hour, "in the morning")
+        }
+        else if(minute < 30){
+            console.log("It's just after", hour, "in the morning")
+        }
+        else if(minute == 30){
+            console.log("It's half past", hour, "in the morning")
+        }
+        else if(minute == 45 && hour < 11){
+            console.log("It's 15 till", hour+1, "in the morning")
+        }
+        else if(minute > 45 && hour < 11){
+            console.log("It's almost", hour+1, "in the morning")
+        }
+    }
+    else if(period == "PM"){
+        if(hour == 12 && minute == 0){
+            console.log("It's noon!");
+        }
+        else if(minute == 5 && hour < 9){
+            console.log("It's 5 after", hour, "in the afternoon")
+        }
+        else if(minute > 15 && minute < 30 && hour < 9){
+            console.log("It's a quarter after", hour, "in the afternoon")
+        }
+        else if(minute < 30 && hour < 9){
+            console.log("It's just after", hour, "in the afternoon")
+        }
+        else if(minute == 30 && hour < 9){
+            console.log("It's half past", hour, "in the afternoon")
+        }
+        else if(minute == 45 && hour < 8){
+            console.log("It's 15 till", hour+1, "in the afternoon")
+        }
+        else if(minute > 45 && hour < 8){
+            console.log("It's almost", hour+1, "in the afternoon")
+        }
+        else if(minute == 5 && hour >= 9){
+            console.log("It's 5 after", hour, "at night")
+        }
+        else if(minute > 15 && minute < 30 && hour >= 9){
+            console.log("It's a quarter after", hour, "at night")
+        }
+        else if(minute < 30 && hour >= 9){
+            console.log("It's just after", hour, "at night")
+        }
+        else if(minute == 30 && hour >= 9){
+            console.log("It's half past", hour, "at night")
+        }
+        else if(minute == 45 && hour >= 9 && hour < 11){
+            console.log("It's 15 till", hour+1, "at night")
+        }
+        else if(minute > 45 && hour >= 9 && hour < 11){
+            console.log("It's almost", hour+1, "at night")
+        }
+    }
+</script>
+</html>
