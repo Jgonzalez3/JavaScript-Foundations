@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>For a Few Billion</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function Reward30Days(){
+        var reward = .01;
+        var sum = 0;
+        for(var i = 1; i<31; i++){
+            sum += reward;
+            reward = reward * 2;
+            console.log(sum);
+            console.log(reward);
+        }
+    }
+
+    function DaysUntil10000(){
+        var reward = .01;
+        var sum = 0;
+        var daycount = 0;
+        for(var i = 1; i<31; i++){
+            sum += reward;
+            reward = reward * 2;
+            console.log(sum);
+            console.log(reward);
+            daycount++;
+            if(sum > 10000){
+                break;
+            }
+        }
+        console.log(daycount);
+    }
+
+    function DaysUntilBillion(){
+        var reward = .01;
+        var sum = 0;
+        var daycount = 0;
+        for(var i = 1; i<Infinity; i++){
+            sum += reward;
+            reward = reward * 2;
+            console.log(sum);
+            console.log(reward);
+            daycount++;
+            if(sum > 1000000000){
+                break;
+            }
+        }
+        console.log(daycount);
+    }
+    function DaysUntilInfinity(){
+        var reward = .01;
+        var sum = 0;
+        var daycount = 0;
+        for(var i = 1; i<Infinity; i++){
+            sum += reward;
+            reward = reward * 2;
+            console.log(sum);
+            console.log(reward);
+            daycount++;
+            if(sum == Infinity){
+                break;
+            }
+        }
+        console.log(daycount);
+    }
+    
+</script>
+</html>
