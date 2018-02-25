@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Range Print</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function PrintRange(start,end,skip){
+        if(skip == undefined){
+            skip = 1;
+        }
+        if(end == undefined){
+            end = start;
+            start =0;
+
+        }
+        for(var i = start; i<end; i+=skip){
+            console.log(i)
+        }
+    }
+</script>
+</html>
